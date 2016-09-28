@@ -37,7 +37,6 @@ public class Request {
         try {
             i = input.read(buffer);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
             i = -1;
         }

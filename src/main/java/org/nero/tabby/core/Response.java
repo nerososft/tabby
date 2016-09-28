@@ -24,7 +24,7 @@ public class Response {
         FileInputStream fis = null;
 
         File file = new File(HttpServer.WEB_ROOT,request.getUri());
-        if(file.exists()){
+        if(file==null | file.exists()){
             try {
                 fis = new FileInputStream(file);
                 int ch = fis.read(bytes,0,BUFFER_SIZE);
@@ -34,7 +34,6 @@ public class Response {
                 }
 
             } catch (FileNotFoundException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }catch(IOException e){
                 e.printStackTrace();
@@ -55,7 +54,6 @@ public class Response {
                 output.write(errorMessage.getBytes());
                 output.flush();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

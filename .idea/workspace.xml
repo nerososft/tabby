@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7c464b-387c-4149-995f-83528b00119b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/50x.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/nero/tabby/core/Request.class" afterPath="$PROJECT_DIR$/target/classes/org/nero/tabby/core/Request.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Request.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpTask.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <caret line="30" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -932,12 +925,12 @@
       <updated>1475074841575</updated>
       <workItem from="1475074867245" duration="65000" />
       <workItem from="1475075052483" duration="2568000" />
-      <workItem from="1475078120558" duration="3658000" />
+      <workItem from="1475078120558" duration="3768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6291000" />
+    <option name="totallyTimeSpent" value="6401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -1197,7 +1190,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <caret line="30" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="1" />
           <folding />
         </state>
       </provider>

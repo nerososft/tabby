@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb7c464b-387c-4149-995f-83528b00119b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.3/conf/tabby.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.3/tabby-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.3/tabby.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.3/www/50x.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.3/www/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/conf/Configure.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/conf/Configure.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Request.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpTask.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/utils/SystemUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/utils/SystemUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tabby.iml" afterPath="$PROJECT_DIR$/tabby.iml" />
-    </list>
+    <list default="true" id="fb7c464b-387c-4149-995f-83528b00119b" name="Default" comment="" />
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -991,12 +975,12 @@
       <workItem from="1475132365181" duration="2821000" />
       <workItem from="1475136376415" duration="2160000" />
       <workItem from="1475138753156" duration="9402000" />
-      <workItem from="1475152221161" duration="8473000" />
+      <workItem from="1475152221161" duration="8561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31775000" />
+    <option name="totallyTimeSpent" value="31863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />

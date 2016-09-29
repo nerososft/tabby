@@ -17,7 +17,7 @@ if [ $command = "start" ]; then
         echo ""
         echo "tabby started!"
         echo ""
-        java -jar tabby-1.0-SNAPSHOT.jar
+        java -jar ../core/tabby-1.0-SNAPSHOT.jar
     fi
 elif [ $command = "restart" ]; then
     if [ $pIDa = "" ]; then
@@ -31,7 +31,7 @@ elif [ $command = "restart" ]; then
         if [ $nowpIda = "" ]; then
             echo ""
             echo "tabby restarted! "
-            java -jar tabby-1.0-SNAPSHOT.jar
+            java -jar ../core/tabby-1.0-SNAPSHOT.jar
         else
             echo ""
             echo "tabby restart failed,port 8080 has been used by proccess(PID=$nowpIda)!"

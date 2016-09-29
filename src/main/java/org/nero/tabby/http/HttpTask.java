@@ -39,7 +39,10 @@ public class HttpTask  implements  Runnable {
             Response response = new Response(output);
             response.setRequest(request);
             response.sendStaticResource();
+
             socket.close();
+            input.close();
+            output.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -9,9 +9,7 @@ import org.nero.tabby.http.HttpServer;
 public class App 
 {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         HttpServer server = new HttpServer();
         server.await();
-
     }
 }

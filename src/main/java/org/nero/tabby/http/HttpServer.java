@@ -6,10 +6,9 @@ import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
-public class HttpServer extends Thread {
+public class HttpServer{
 
     /**
      * @param args
@@ -35,8 +34,13 @@ public class HttpServer extends Thread {
             e.printStackTrace();
         }
         Executor executor = Executors.newFixedThreadPool(new SystemUtils().getMaxThread());
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1,
+                new SystemUtils().getMaxThread(),
+                60, TimeUnit.SECONDS,
+                new ArrayBlockingQueue<Runnable>(200),new ThreadPoolExecutor.DiscardPolicy());
         while(true){
-            executor.execute(new HttpTask(serverSocket));
+            threadPoolExecutor.submit(new HttpTask(serverSocket));
+           // executor.execute(new HttpTask(serverSocket));
         }
 
     }

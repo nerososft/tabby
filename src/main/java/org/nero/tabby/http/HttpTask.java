@@ -14,7 +14,7 @@ import java.net.Socket;
  * data: 16-9-28
  * time: 下午11:34.
  */
-public class HttpTask extends Thread {
+public class HttpTask  implements  Runnable {
 
     private ServerSocket serverSocket;
 
@@ -24,11 +24,10 @@ public class HttpTask extends Thread {
 
     public void run() {
         try {
-            Socket socket = null;
-            InputStream input = null;
-            OutputStream output = null;
+            Socket socket;
+            InputStream input;
+            OutputStream output;
 
-            //System.out.println("当前线程："+Thread.currentThread().getName());
 
             socket = serverSocket.accept();
             input = socket.getInputStream();
@@ -42,7 +41,6 @@ public class HttpTask extends Thread {
             response.sendStaticResource();
             socket.close();
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

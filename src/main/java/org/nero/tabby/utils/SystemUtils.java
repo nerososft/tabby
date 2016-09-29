@@ -1,6 +1,5 @@
 package org.nero.tabby.utils;
 
-import java.io.File;
 
 /**
  * author： nero

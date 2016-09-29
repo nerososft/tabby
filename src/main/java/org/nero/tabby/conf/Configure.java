@@ -1,7 +1,11 @@
 package org.nero.tabby.conf;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * author： nero
@@ -11,19 +15,21 @@ import java.util.HashMap;
  */
 public class Configure {
 
-    public final String confFilePath = System.getProperty("user.dir") + File.separator + "conf/tabby.conf";
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    private HashMap<Confkey,Confvalue> confs;
+    public final String confFilePath = System.getProperty("user.dir") + File.separator + "../conf/tabby.conf";
+
+    private Map<Confkey,Confvalue> confs;
 
     public void init(){
         getConf();
     }
 
-    public HashMap<Confkey, Confvalue> getConfs() {
+    public Map<Confkey, Confvalue> getConfs() {
         return confs;
     }
 
-    public void setConfs(HashMap<Confkey, Confvalue> confs) {
+    public void setConfs(Map<Confkey, Confvalue> confs) {
         this.confs = confs;
     }
 
@@ -37,16 +43,16 @@ public class Configure {
         return conf;
     }
 
-    public HashMap<Confkey,Confvalue> getConf() {
+    private Map<Confkey,Confvalue> getConf() {
         confs = new HashMap<Confkey,Confvalue>();
 
         String confContent = readFile(confFilePath);
 
         String[] confStrings = confContent.trim().split("\n");
         for(String confString:confStrings){
-            if(!confString.equals("")) {
+            if(!"".equals(confString)) {
                 String[] confItems = confString.trim().split(":");
-                if (!confItems[0].substring(0, 1).equals("#")) {
+                if (!"#".equals(confItems[0].substring(0, 1))) {
                     confs.put(new Confkey(confItems[0].trim()),new Confvalue(confItems[1].trim()));
                 }
             }
@@ -76,25 +82,25 @@ public class Configure {
             data = new byte[len.intValue()];
             for (reader = new FileInputStream(filename); reader.available() > 0; ) {
                 readed = reader.read(data, totalReaded,
-                        (len.intValue() - totalReaded));
+                        len.intValue() - totalReaded);
                 totalReaded += readed;
             }
             return new String(data, "utf-8");
         } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(),e.getCause());
             return "";
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(),e.getCause());
             return "";
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(),e.getCause());
             return "";
         } finally {
             if (reader != null) {
                 try {
                     reader.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    logger.error(e.getMessage(),e.getCause());
                 }
             }
         }

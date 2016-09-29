@@ -1,6 +1,8 @@
 package org.nero.tabby.core;
 
 import org.nero.tabby.http.HttpServer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,6 +12,9 @@ import java.io.OutputStream;
 
 
 public class Response {
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
 
     private static final int BUFFER_SIZE = 1024;
     Request request;
@@ -34,9 +39,9 @@ public class Response {
                 }
 
             } catch (FileNotFoundException e) {
-                e.printStackTrace();
+                logger.error(e.getMessage(),e.getCause());
             }catch(IOException e){
-                e.printStackTrace();
+                logger.error(e.getMessage(),e.getCause());
             }finally{
                 if(fis !=null){
                     fis.close();
@@ -54,7 +59,7 @@ public class Response {
                 output.write(errorMessage.getBytes());
                 output.flush();
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error(e.getMessage(),e.getCause());
             }
         }
     }

@@ -1,17 +1,14 @@
 package org.nero.tabby.http;
 
 import org.nero.tabby.conf.Configure;
-import org.nero.tabby.conf.Confkey;
-import org.nero.tabby.conf.Confvalue;
 import org.nero.tabby.utils.SystemUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InterruptedIOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.*;
 
 public class HttpServer{
@@ -19,7 +16,8 @@ public class HttpServer{
     /**
      * @param args
      */
-    private Executor executor;
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
     //WEB_ROOT是服务器的根目录
     public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "www";
 
@@ -30,19 +28,19 @@ public class HttpServer{
     private ServerSocket serverSocket = null;
     private int port = 8080;
     private String hostName = "127.0.0.1";
-    private Configure configure;
+
     public void init(){
 
-        configure = new Configure();
+        Configure configure = new Configure();
         configure.init();
 
         String confport = configure.getConfItem("port");
-        if(!confport.equals("")){
-            this.port = Integer.valueOf(confport).intValue();
+        if(!"".equals(confport)){
+            this.port = Integer.parseInt(confport);
         }
-        String hostName = configure.getConfItem("hostname");
-        if(!hostName.equals("")){
-            this.hostName = hostName;
+        String hostname = configure.getConfItem("hostname");
+        if(!"".equals(hostname)){
+            this.hostName = hostname;
         }
 
         System.out.println("server run at "+this.hostName+":"+this.port);
@@ -52,10 +50,10 @@ public class HttpServer{
         init();
         try {
             serverSocket = new ServerSocket(port, 1, InetAddress.getByName(hostName));
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException e){
+            logger.error(e.getMessage(),e.getCause());
         }
-        executor = Executors.newFixedThreadPool(new SystemUtils().getMaxThread());
+
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1,
                 new SystemUtils().getMaxThread(),
                 60, TimeUnit.SECONDS,

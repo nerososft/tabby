@@ -1,11 +1,15 @@
 package org.nero.tabby.core;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.InputStream;
 
 
 public class Request {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
     //输入流
     private InputStream input;
 
@@ -30,20 +34,20 @@ public class Request {
     //从套接字中读取字符信息
     public void parse(){
 
-        StringBuffer request = new StringBuffer(2048);
+        StringBuilder request = new StringBuilder(2048);
         int i = 0;
         byte[] buffer = new byte[2048];
 
         try {
             i = input.read(buffer);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(),e.getCause());
             i = -1;
         }
         for(int j = 0;j<i;j++){
             request.append((char)(buffer[j]));
         }
-        //System.out.println(request.toString());
+        logger.info(request.toString());
         uri = parseUri(request.toString());
     }
     //截取请求的url

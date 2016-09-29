@@ -2,6 +2,8 @@ package org.nero.tabby.http;
 
 import org.nero.tabby.core.Request;
 import org.nero.tabby.core.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -15,6 +17,9 @@ import java.net.Socket;
  * time: 下午11:34.
  */
 public class HttpTask  implements  Runnable {
+
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private ServerSocket serverSocket;
 
@@ -44,7 +49,7 @@ public class HttpTask  implements  Runnable {
             input.close();
             output.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(),e.getCause());
         }
     }
 

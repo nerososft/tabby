@@ -8,7 +8,7 @@ public class Request {
 
     //输入流
     private InputStream input;
-    //截取url,如http://localhost:8080/index.html ，截取部分为 /index.html
+
     private String uri;
     public Request(InputStream inputStream){
         this.input = inputStream;
@@ -43,7 +43,7 @@ public class Request {
         for(int j = 0;j<i;j++){
             request.append((char)(buffer[j]));
         }
-        System.out.println(request.toString());
+        //System.out.println(request.toString());
         uri = parseUri(request.toString());
     }
     //截取请求的url

@@ -9,16 +9,13 @@ if [ $command = "start" ]; then
         echo "port 8080 has been used by proccess(PID=$pIDa)!"
     else
         echo ""
-        echo "--------------------------------------------"
-        echo "| _____          ___  ___  _    _          |"
-        echo "|   |      /\    |  \ |  \  \  /    web    |"
-        echo "|   |     /__\   |__/ |__/   \/     server |"
-        echo "|   |    /    \  |  \ |  \    |            |"
-        echo "|   |   /      \ |__/ |__/    |     v 0.0.2|"
-        echo "--------------------------------------------"
+        echo "_____      ___ ___ _    _          "
+        echo "  |   /\   |  \|  \ \  /    web    "
+        echo "  |  /__\  |__/|__/  \/     server "
+        echo "  | /    \ |  \|  \   |            "
+        echo "  |/      \|__/|__/   |     v 0.0.2"
         echo ""
         echo "tabby started!"
-        echo "http:127.0.0.1:8080"
         echo ""
         java -jar tabby-1.0-SNAPSHOT.jar
     fi

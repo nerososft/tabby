@@ -1,11 +1,17 @@
 package org.nero.tabby.http;
 
+import org.nero.tabby.conf.Configure;
+import org.nero.tabby.conf.Confkey;
+import org.nero.tabby.conf.Confvalue;
 import org.nero.tabby.utils.SystemUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InterruptedIOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.*;
 
 public class HttpServer{
@@ -21,13 +27,29 @@ public class HttpServer{
     private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
 
 
+    private ServerSocket serverSocket = null;
+    private int port = 8080;
+    private String hostName = "127.0.0.1";
+    private Configure configure;
+    public void init(){
+
+        configure = new Configure();
+        configure.init();
+
+        String confport = configure.getConfItem("port");
+        if(!confport.equals("")){
+            this.port = Integer.valueOf(confport).intValue();
+        }
+        String hostName = configure.getConfItem("hostname");
+        if(!hostName.equals("")){
+            this.hostName = hostName;
+        }
+
+        System.out.println("server run at "+this.hostName+":"+this.port);
+    }
 
     public void await() {
-        ServerSocket serverSocket = null;
-        int port = 8080;
-        System.err.println(WEB_ROOT);
-
-        String hostName = "127.0.0.1";
+        init();
         try {
             serverSocket = new ServerSocket(port, 1, InetAddress.getByName(hostName));
         } catch (IOException e) {

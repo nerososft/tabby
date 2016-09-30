@@ -19,7 +19,7 @@ public class HttpServer{
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     //WEB_ROOT是服务器的根目录
-    public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "www";
+    public static String WEB_ROOT = System.getProperty("user.dir") + File.separator;
 
     //关闭的命令
     private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
@@ -43,7 +43,10 @@ public class HttpServer{
             this.hostName = hostname;
         }
 
+        WEB_ROOT = WEB_ROOT.replaceAll("bin","www");
+
         System.out.println("server run at "+this.hostName+":"+this.port);
+        System.out.println("webroot : "+ WEB_ROOT);
     }
 
     public void await() {

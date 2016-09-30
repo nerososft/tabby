@@ -17,7 +17,7 @@ public class Configure {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    public final String confFilePath = System.getProperty("user.dir") + File.separator + "../conf/tabby.conf";
+    public static String confFilePath = System.getProperty("user.dir") + File.separator;
 
     private Map<Confkey,Confvalue> confs;
 
@@ -46,6 +46,7 @@ public class Configure {
     private Map<Confkey,Confvalue> getConf() {
         confs = new HashMap<Confkey,Confvalue>();
 
+        confFilePath = confFilePath.replaceAll("bin","conf/tabby.conf");
         String confContent = readFile(confFilePath);
 
         String[] confStrings = confContent.trim().split("\n");

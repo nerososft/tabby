@@ -1,0 +1,703 @@
+
+_____      ___ ___ _    _          
+  |   /\   |  \|  \ \  /    web    
+  |  /__\  |__/|__/  \/     server 
+  | /    \ |  \|  \   |            
+  |/      \|__/|__/   |     v 0.0.2
+
+tabby started!
+
+18:20:40,938 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+18:20:40,938 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:20:40,938 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/nero/code/tabby/tabby-0.0.5/core/tabby-1.0-SNAPSHOT.jar!/logback.xml]
+18:20:40,949 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@7fc4fe21 - URL [jar:file:/home/nero/code/tabby/tabby-0.0.5/core/tabby-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+18:20:41,008 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:20:41,010 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+18:20:41,024 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:15 - no applicable action for [file], current ElementPath  is [[configuration][appender][file]]
+18:20:41,024 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:83 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][appender][rollingPolicy]]
+18:20:41,025 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@9:30 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][appender][rollingPolicy][fileNamePattern]]
+18:20:41,025 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@10:25 - no applicable action for [maxHistory], current ElementPath  is [[configuration][appender][rollingPolicy][maxHistory]]
+18:20:41,026 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:20:41,051 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@15:17 - no applicable action for [append], current ElementPath  is [[configuration][appender][append]]
+18:20:41,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:18 - no applicable action for [prudent], current ElementPath  is [[configuration][appender][prudent]]
+18:20:41,052 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+18:20:41,052 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+18:20:41,052 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:20:41,054 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6b624317 - Registering current configuration as safe fallback point
+server run at 127.0.0.1:8085
+webroot : /home/nero/code/tabby/tabby-0.0.5/www/
+18:20:47.386 [pool-1-thread-15] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:47.434 [pool-1-thread-15] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:47.802 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:47.845 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:47.996 [pool-1-thread-12] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.032 [pool-1-thread-3] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.162 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.197 [pool-1-thread-11] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.332 [pool-1-thread-2] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.364 [pool-1-thread-14] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.494 [pool-1-thread-3] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.531 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.654 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.686 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.820 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.855 [pool-1-thread-7] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:48.983 [pool-1-thread-7] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.015 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.137 [pool-1-thread-10] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.171 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.308 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.338 [pool-1-thread-6] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.489 [pool-1-thread-13] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.527 [pool-1-thread-8] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.647 [pool-1-thread-8] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.680 [pool-1-thread-14] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.805 [pool-1-thread-11] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.834 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:49.969 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.001 [pool-1-thread-4] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.119 [pool-1-thread-1] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.151 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.273 [pool-1-thread-1] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.307 [pool-1-thread-4] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.455 [pool-1-thread-4] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.486 [pool-1-thread-6] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.621 [pool-1-thread-6] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.649 [pool-1-thread-9] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.784 [pool-1-thread-9] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.820 [pool-1-thread-14] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.951 [pool-1-thread-4] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:50.980 [pool-1-thread-6] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.110 [pool-1-thread-9] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.142 [pool-1-thread-4] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.274 [pool-1-thread-6] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.305 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.444 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.473 [pool-1-thread-6] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.599 [pool-1-thread-3] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.629 [pool-1-thread-5] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.752 [pool-1-thread-14] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.790 [pool-1-thread-3] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.904 [pool-1-thread-16] INFO  org.nero.tabby.core.Request - GET /index.html HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Idea-7e67489=9b761889-bcdf-413f-93a6-4ebdc3d23847; iconSize=32x32; hudson_auto_refresh=false
+
+
+18:20:51.946 [pool-1-thread-14] INFO  org.nero.tabby.core.Request - GET /favicon.ico HTTP/1.1
+Host: localhost:8085
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+Accept: */*
+Referer: http://localhost:8085/index.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: iconSize=32x32; hudson_auto_refresh=false
+
+

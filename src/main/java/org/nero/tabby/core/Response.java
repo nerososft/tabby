@@ -28,7 +28,12 @@ public class Response {
         byte[] bytes = new byte[BUFFER_SIZE];
         FileInputStream fis = null;
 
-        File file = new File(HttpServer.WEB_ROOT,request.getUri());
+        String uri = request.getUri();
+
+        if(uri==null){
+            uri = "index.html";
+        }
+        File file = new File(HttpServer.WEB_ROOT,uri);
         if(file.exists()){
             try {
                 fis = new FileInputStream(file);

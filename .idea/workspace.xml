@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7c464b-387c-4149-995f-83528b00119b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/bin/tabby.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/conf/tabby.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/core/tabby-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/lib/log4j-1.2.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/lib/logback-classic-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/lib/logback-core-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/lib/slf4j-api-1.7.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/www/50x.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tabby-0.0.4/www/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/tabby-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core/tabby-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/tabby.conf" afterPath="$PROJECT_DIR$/conf/tabby.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java" afterPath="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tabby-0.0.5/conf/tabby.conf" afterPath="$PROJECT_DIR$/tabby-0.0.5/conf/tabby.conf" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,18 +52,18 @@
       <file leaf-file-name="tabby.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/tabby.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="242">
+              <caret line="25" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tabby.conf" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tabby.conf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tabby-0.0.5/conf/tabby.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="474">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configure.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Configure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nero/tabby/conf/Configure.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="474">
@@ -199,9 +186,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/nero/tabby/conf/Configure.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nero/tabby/core/Response.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java" />
         <option value="$PROJECT_DIR$/conf/tabby.conf" />
         <option value="$PROJECT_DIR$/tabby-0.0.5/conf/tabby.conf" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java" />
       </list>
     </option>
   </component>
@@ -281,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="tabby-0.0.5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,37 +282,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="tabby-0.0.5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tabby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tabby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tabby" />
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,22 +294,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="tabby" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tabby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tabby" />
@@ -919,12 +864,12 @@
       <workItem from="1475136376415" duration="2160000" />
       <workItem from="1475138753156" duration="9402000" />
       <workItem from="1475152221161" duration="17502000" />
-      <workItem from="1475573617020" duration="2509000" />
+      <workItem from="1475573617020" duration="3824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43313000" />
+    <option name="totallyTimeSpent" value="44628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="696" extended-state="6" />
@@ -1300,22 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/tabby.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tabby-0.0.5/conf/tabby.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nero/tabby/http/HttpServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="811">
@@ -1335,6 +1264,22 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/tabby.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="25" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabby-0.0.5/conf/tabby.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
